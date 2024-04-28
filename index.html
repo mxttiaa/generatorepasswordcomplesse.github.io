@@ -5,35 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generatore Password Complesse</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/26a65fdd06.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
     <div id="container">
         <h1>Generatore Password Complesse</h1>
         <div id="screen">
-            <h3 id="dysplayPassword">Lorem ipsum dolor sit amet.<button id="tastoCopia">Copia</button></h3>  
+            <h3 id="dysplayPassword">Br1R1Spg<button id="tastoCopia">copia</button></h3>  
         </div>
         <div id="opzioni">
-            <div id="div1">
-                <label for="NumeroCaratteri">Numero di caratteri</label>
-                <input type="number" name="NumeroCaratteri" id="NumeroCaratteri" min="4" value="4">
+            <div id="div1" class="boxOpzioni">
+                <label for="numeroCaratteri">Numero di caratteri</label>
+                <input type="number" name="numeroCaratteri" id="numeroCaratteri" min="4" value="4">
             </div>
-            <div id="div2">
-                <label for="minuscoli">Caratteri Minuscoli</label>
+            <div id="divT" class="boxOpzioni"><label for="#">Tipo di caratteri:</label></div>
+            <div id="div2" class="boxOpzioni">
+                <label for="minuscoli">Minuscoli</label>
                 <input type="checkbox" name="minuscoli" id="minuscoli">
                 <span class="bordoSpunta"><span class="spunta" id="spunta2"></span></span>
             </div>
-            <div id="div3">
-                <label for="maiuscoli">Caratteri Maiuscoli</label>
+            <div id="div3" class="boxOpzioni">
+                <label for="maiuscoli">Maiuscoli</label>
                 <input type="checkbox" name="maiuscoli" id="maiuscoli">
                 <span class="bordoSpunta"><span class="spunta" id="spunta3"></span></span>
             </div>
-            <div id="div4">
-                <label for="numeri">Numeri</label>
+            <div id="div4" class="boxOpzioni">
+                <label for="numeri">Numerici</label>
                 <input type="checkbox" name="numeri" id="numeri">
                 <span class="bordoSpunta"><span class="spunta" id="spunta4"></span></span>
             </div>
-            <div id="div5">
+            <div id="div5" class="boxOpzioni">
                 <label for="speciali">Speciali</label>
                 <input type="checkbox" name="speciali" id="speciali">
                 <span class="bordoSpunta"><span class="spunta" id="spunta5"></span></span>
