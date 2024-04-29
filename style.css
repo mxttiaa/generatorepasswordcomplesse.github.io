@@ -49,6 +49,9 @@ h3{
 
 #tastoCopia {
     margin: 0.3em 0.7em;
+    border: none;
+    background-color: unset;
+    color: red;
 }
 
 
@@ -56,7 +59,7 @@ h3{
     width: 80%;
     padding: 1em 2em;
     margin: 0 15em;
-    margin-bottom: 2em;
+    margin-bottom: 0.7em;
     
 }
 
@@ -100,4 +103,12 @@ label {
     padding: 0.2em;
     background: unset;
     
+}
+
+
+#generaPassword{
+    font-size: 1.2em;
+    padding: 0.3em;
+    border-radius: 20px;
+    margin-bottom: 1.5em;
 }
