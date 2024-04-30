@@ -98,7 +98,7 @@ label {
     border-bottom: 2px solid black;
     width: 2.2em;
     font-size: 1.5em;
-    padding: 0.2em;
+    padding: 0.17em;
     background: unset;
     
 }
@@ -108,5 +108,19 @@ label {
     font-size: 1.2em;
     padding: 0.3em;
     border-radius: 20px;
+}
+
+
+
+#pulsanti{
     margin-bottom: 1.5em;
+   /* width: 40%;
+    display: flex;
+    justify-content: space-between;*/
+
+}
+
+
+.nascosto{
+    display: none;
 }

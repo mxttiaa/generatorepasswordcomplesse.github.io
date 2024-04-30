@@ -38,13 +38,51 @@ DivMin.addEventListener("click", ()=>{
         SpuntaMin.classList.remove("spunta");
     }
     generaPassword();
-})
+});
+
+DivMaiu.addEventListener("click", ()=>{
+    if(maiuscoli.checked === false){
+        maiuscoli.checked = true;
+        SpuntaMaiu.className = "spunta";
+    }else {
+        maiuscoli.checked = false;
+        SpuntaMaiu.classList.remove("spunta");
+    }
+    generaPassword();
+});
+
+
+DivNum.addEventListener("click", ()=>{
+    if(numerici.checked === false){
+        numerici.checked = true;
+        SpuntaNum.className = "spunta";
+    }else {
+        numerici.checked = false;
+        SpuntaNum.classList.remove("spunta");
+    }
+    generaPassword();
+});
+
+DivSpec.addEventListener("click", ()=>{
+    if(speciali.checked === false){
+        speciali.checked = true;
+        SpuntaSpec.className = "spunta";
+    }else {
+        speciali.checked = false;
+        SpuntaSpec.classList.remove("spunta");
+    }
+    generaPassword();
+});
+
+
 
 pulsanteGenera.addEventListener("click", generaPassword);
 
 function generaPassword(){
+
     if (numeroCaratteri.value<4) numeroCaratteri.value = 4;
     if (numeroCaratteri.value>20) numeroCaratteri.value = 20;
+
    let primaStringa = "";
    let password = "";
    if(minuscoli.checked) primaStringa += listaMin;
@@ -56,8 +94,16 @@ function generaPassword(){
         Math.floor(Math.random()* primaStringa.length)
     );
     }
-    schermo.innerHTML = password;
+     if (password == ""){
+            alert("Nessun valore selezionato");
+
+        } else{
+            schermo.innerHTML = password; 
+        }
 }
 
 generaPassword();
 
+pulsanteCopia.addEventListener("click",(event)=>{
+   schermo.value.copy();
+})

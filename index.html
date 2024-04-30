@@ -29,26 +29,34 @@
             <div id="divT" class="boxOpzioni"><label for="#">Tipo di caratteri:</label></div>
             <div id="div2" class="boxOpzioni">
                 <label for="minuscoli">Minuscoli</label>
-                <input type="checkbox" name="minuscoli" id="minuscoli" checked>
+                <input type="checkbox" name="minuscoli" id="minuscoli" checked class="nascosto">
                 <span class="bordoSpunta"><span class="spunta" id="spunta2"></span></span>
             </div>
             <div id="div3" class="boxOpzioni">
                 <label for="maiuscoli">Maiuscoli</label>
-                <input type="checkbox" name="maiuscoli" id="maiuscoli">
+                <input type="checkbox" name="maiuscoli" id="maiuscoli" class="nascosto">
                 <span class="bordoSpunta"><span class="" id="spunta3"></span></span>
             </div>
             <div id="div4" class="boxOpzioni">
                 <label for="numeri">Numerici</label>
-                <input type="checkbox" name="numeri" id="numeri" checked>
+                <input type="checkbox" name="numeri" id="numeri" checked class="nascosto">
                 <span class="bordoSpunta"><span class="spunta" id="spunta4"></span></span>
             </div>
             <div id="div5" class="boxOpzioni">
                 <label for="speciali">Speciali</label>
-                <input type="checkbox" name="speciali" id="speciali">
+                <input type="checkbox" name="speciali" id="speciali" class="nascosto">
                 <span class="bordoSpunta"><span class="" id="spunta5"></span></span>
             </div>
         </div>
-        <button id="generaPassword">Genera</button>
+        <div id="pulsanti">
+            <button id="generaPassword">Genera</button>
+            <!--<button id="tastoCopia">
+                <span class="material-symbols-outlined" title="copia">
+                    content_copy
+                    </span>
+            </button> -->
+        </div>
+        
     </div>
     <script src="app.js"></script>
 </body>
