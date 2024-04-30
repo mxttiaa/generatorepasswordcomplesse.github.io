@@ -104,6 +104,3 @@ function generaPassword(){
 
 generaPassword();
 
-pulsanteCopia.addEventListener("click",(event)=>{
-   schermo.value.copy();
-})
